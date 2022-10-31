@@ -16,6 +16,17 @@
   //   transform: translate3d(0, 0, 0);
   // }
 
+  // Hide the side bar when the width is too small
+  // I am unsure where, but the content min width is 
+  // defined as 64em, when viewport is smaller than that
+  // it moves the sidebar to the top instead of the side 
+  // I want to hide it instead. minus 1 pixel so there's not
+  // one exact size of 64em where we hide the sidebar while
+  // still floating it to the right
+  @media screen and (max-width: calc(64em - 1px)){
+    display: none;
+  }
+
   @include breakpoint($large) {
     float: left;
     width: calc(#{$right-sidebar-width-narrow} - 1em);
