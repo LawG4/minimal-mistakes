@@ -20,7 +20,7 @@ title                    : "Lawrence's Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Lawrence"
-description              : "An amazing website."
+description              : "An unfiltered look into a graphics programmer's mind, ramblings and insanity included"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -128,6 +128,27 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+
+# Collections to group my posts 
+collections:
+  Topics:
+    output: true
+    permalink: /:collection/:path/
+  Portfilio:
+    output: true
+    permalink: /:collection/:path/
+  Graphics:
+    output: true
+    permalink: /:collection/:path/
+  Basics:
+    output: true
+    permalink: /:collection/:path/
+  Wii:
+    output: true
+    permalink: /:collection/:path/
+  Psx:
+    output: true
+    permalink: /:collection/:path/
 
 # Site Footer
 footer:
@@ -279,6 +300,18 @@ compress_html:
 
 # Defaults
 defaults:
+  # _Topics - They have a seperate second type 
+  - scope:
+      path: "Topics"
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      is_global_topic: true
+      comments: # true
+      share: true
+      related: true
   # _posts
   - scope:
       path: ""
