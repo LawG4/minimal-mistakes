@@ -370,6 +370,13 @@ body {
     border: 0;
   }
 
+// Extra implementation provided by me just to make things bigger on the home without 
+// effecting articles 
+  .archive__home__subtitle {
+    clear: both;
+    border: 0;
+  }
+
   + .taxonomy__section {
     margin-top: 2em;
   }

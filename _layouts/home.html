@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: archive-home
 ---
 
 {{ content }}
@@ -15,7 +15,7 @@ layout: archive
 {% endif %}
 
 <!-- List all of the posts in the "Topics" folder -->
-<h3 class="archive__subtitle">Topics</h3>
+<h3 class="archive__home__subtitle" >Topics</h3>
 <div class="entries-{{ entries_layout }}">
   {% for post in posts %}
     {% if post.is_global_topic %}
@@ -25,7 +25,7 @@ layout: archive
 </div>
 
 <!-- List all of the posts which aren't a topic -->
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<h3 class="archive__home__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 <div class="entries-{{ entries_layout }}">
   {% for post in posts %}
     {% if post.is_global_topic != true %}
