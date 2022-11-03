@@ -299,6 +299,9 @@ compress_html:
     envs: development
 
 
+# Default teaser image for posts
+teaser: "/assets/default_open_graph.png"
+
 # Defaults
 defaults:
   # _Topics - They have a seperate second type 
