@@ -19,7 +19,7 @@ layout: archive-home
 <div class="entries-{{ entries_layout }}">
   {% for post in posts %}
     {% if post.is_global_topic %}
-      {% include archive-single.html type=entries_layout %}
+      {% include archive-single-home.html type=entries_layout %}
     {% endif %}
   {% endfor %}
 </div>
@@ -29,7 +29,7 @@ layout: archive-home
 <div class="entries-{{ entries_layout }}">
   {% for post in posts %}
     {% if post.is_global_topic != true %}
-      {% include archive-single.html type=entries_layout %}
+      {% include archive-single-home.html type=entries_layout %}
     {% endif %}
   {% endfor %}
 </div>

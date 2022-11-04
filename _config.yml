@@ -300,7 +300,7 @@ compress_html:
 
 
 # Default teaser image for posts
-teaser: "/assets/default_open_graph.png"
+teaser: "/assets/default_teaser.png"
 
 # Defaults
 defaults:
@@ -323,7 +323,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: # true
       share: true
       related: true
