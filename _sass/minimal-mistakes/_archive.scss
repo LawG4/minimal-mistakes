@@ -105,6 +105,8 @@
   position: relative;
   border-radius: $border-radius;
   overflow: hidden;
+  text-align: justify; 
+  text-justify: inter-word;
 
   img {
     width: 100%;

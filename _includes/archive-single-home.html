@@ -21,13 +21,30 @@
       {% endif %}
     </h2>
 
-    {% if teaser %}
-      <div class="archive__item-teaser">
-        <img src="{{ teaser | relative_url }}" alt="">
-      </div>
-    {% endif %}
+    <table style="margin-bottom:0px;">
+      <tr>
+        <th width="25%" style="padding: 0;">
+          {% if teaser %}
+          <div class="archive__item-teaser">
+            <img src="{{ teaser | relative_url }}" alt="">
+          </div>
+          {% endif %}
+        </th>
+        <th>
+          {% include page__meta.html type=include.type %}
+          {% if post.excerpt %}
+            <p class="archive__item-excerpt" itemprop="description" style="font-weight: normal; font-size: unset;
+            margin-bottom: 0;">
+              {{ post.excerpt | markdownify | strip_html | truncate: 255 }}
+            </p>
+          {% endif %}
+        </th>
 
-    {% include page__meta.html type=include.type %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 255 }}</p>{% endif %}
+      </tr>
+    </table>
+
+
+
+   
   </article>
 </div>

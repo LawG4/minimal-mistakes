@@ -14,8 +14,21 @@ layout: archive-home
   {% assign posts = site.posts %}
 {% endif %}
 
+
+<!-- Comment out temporarily
+<h3 class="archive__home__subtitle" >Welcome.</h3>
+<p class="archive__item-excerpt" style="text-align: justify; text-justify: inter-word;">
+  Hello! My name is Lawrence, by trade I am a graphics programmer. However, my interests focus on
+  low level programming in general, especially for retro platforms.<br>
+  
+  On this blog I will be publishing write ups about a topic I am looking into, or tutorials aimed
+  for beginner programmers. I also include updates on my long running projects. 
+  <i>(which often die because I keep starting new ones)</i> 
+</p>
+-->
+
 <!-- List all of the posts in the "Topics" folder -->
-<h3 class="archive__home__subtitle" >Topics</h3>
+<!-- Comment out temporarily
 <div class="entries-{{ entries_layout }}">
   {% for post in posts %}
     {% if post.is_global_topic %}
@@ -23,6 +36,7 @@ layout: archive-home
     {% endif %}
   {% endfor %}
 </div>
+-->
 
 <!-- List all of the posts which aren't a topic -->
 <h3 class="archive__home__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>

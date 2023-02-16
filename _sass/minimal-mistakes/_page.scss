@@ -71,6 +71,7 @@ body {
 .page__title {
   margin-top: 0;
   line-height: 1;
+  font-size: $type-size-1;
 
   a {
     color: $text-color;
@@ -113,7 +114,16 @@ body {
   p,
   li,
   dl {
-    font-size: 1em;
+    font-size: $type-size-6;
+    text-align: justify;
+  }
+  img {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+  }
+  ul {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
   }
 
   /* paragraph indents */
